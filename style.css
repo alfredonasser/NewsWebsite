@@ -21,8 +21,8 @@ body {
 nav {
     background: #403F4C;
     padding: 1em 2em;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 form {
@@ -33,9 +33,12 @@ form {
     height: 3em;
 }
 
-.center-menu {
-    display: flex;
-    height: 2em;
+.search-box {
+    text-align: center;
+}
+
+.menu {
+    text-align: right;
 }
 
 button {
@@ -76,4 +79,13 @@ button {
 
 .story img {
     width: 10em;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.hero-highlight img {
+    width: 100%;
 }
